@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  >
+
+  <title>Shirlya Extensions</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      font-family: Arial, sans-serif;
+      background: #0d1117;
+      color: #f0f6fc;
+    }
+
+    header {
+      text-align: center;
+      padding: 60px 20px 30px;
+    }
+
+    header h1 {
+      margin-bottom: 10px;
+      font-size: 2.5rem;
+    }
+
+    header p {
+      color: #8b949e;
+      font-size: 1.1rem;
+    }
+
+    .extensions-grid {
+      width: min(1100px, 90%);
+      margin: 0 auto;
+      padding: 20px 0 60px;
+
+      display: grid;
+      grid-template-columns:
+        repeat(auto-fit, minmax(280px, 1fr));
+
+      gap: 24px;
+    }
+
+    .extension-card {
+      background: #161b22;
+      border: 1px solid #30363d;
+      border-radius: 12px;
+      padding: 24px;
+      transition: transform 0.2s, border-color 0.2s;
+    }
+
+    .extension-card:hover {
+      transform: translateY(-5px);
+      border-color: #3fb950;
+    }
+
+    .extension-icon {
+      width: 64px;
+      height: 64px;
+      margin-bottom: 16px;
+      border-radius: 12px;
+      object-fit: cover;
+    }
+
+    .extension-card h2 {
+      margin: 0 0 10px;
+    }
+
+    .extension-card p {
+      min-height: 72px;
+      color: #8b949e;
+      line-height: 1.5;
+    }
+
+    .buttons {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 20px;
+    }
+
+    .button {
+      display: inline-block;
+      padding: 10px 16px;
+      border-radius: 6px;
+      font-weight: bold;
+      text-decoration: none;
+    }
+
+    .install-button {
+      background: #3fb950;
+      color: #ffffff;
+    }
+
+    .github-button {
+      background: #21262d;
+      border: 1px solid #30363d;
+      color: #f0f6fc;
+    }
+
+    .status {
+      display: inline-block;
+      margin-bottom: 12px;
+      padding: 5px 9px;
+      border-radius: 20px;
+      background: #1f6feb;
+      font-size: 0.8rem;
+    }
+
+    footer {
+      padding: 30px;
+      text-align: center;
+      color: #8b949e;
+      border-top: 1px solid #21262d;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>🧩 Shirlya Extensions</h1>
+
+    <p>
+      Chrome extensions created to improve productivity,
+      recruitment and everyday workflows.
+    </p>
+  </header>
+
+  <main class="extensions-grid">
+
+    <article class="extension-card">
+      <img
+        class="extension-icon"
+        src="images/hunting-tracker.png"
+        alt="Hunting Tracker icon"
+      >
+
+      <span class="status">Available</span>
+
+      <h2>Hunting Tracker</h2>
+
+      <p>
+        Measures and organizes the time invested in
+        Direct Sourcing and recruitment activities.
+      </p>
+
+      <div class="buttons">
+        <a
+          class="button install-button"
+          href="https://chromewebstore.google.com/detail/destacador-de-palavras/nmefhbmcdilnmmidmnklfjjajppjnpin"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Install extension
+        </a>
+      </div>
+    </article>
+
+    <article class="extension-card">
+      <img
+        class="extension-icon"
+        src="images/keyword-highlighter.png"
+        alt="Keyword Highlighter icon"
+      >
+
+      <span class="status">Available</span>
+
+      <h2>Keyword Highlighter</h2>
+
+      <p>
+        Highlights important keywords on web pages,
+        making content review faster and easier.
+      </p>
+
+      <div class="buttons">
+        <a
+          class="button install-button"
+          href="https://chromewebstore.google.com/detail/hunting-tracker/eppbhckkoebkdlkoehclpbhjfpodmngi"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Install extension
+        </a>
+
+      </div>
+    </article>
+
+    <article class="extension-card">
+      <span class="status">Coming soon</span>
+
+      <h2>LinkedIn Profile Analyzer</h2>
+
+      <p>
+        Analyzes profiles and job descriptions to help
+        identify candidate compatibility.
+      </p>
+
+      <div class="buttons">
+        <a
+          class="button github-button"
+          href="#"
+        >
+          In development
+        </a>
+      </div>
+    </article>
+
+  </main>
+
+  <footer>
+    Developed by Shirlya Lima
+  </footer>
+</body>
+</html>
